@@ -1,21 +1,10 @@
+import types from "./types";
 
-export const INCREMENT = "INCREMENT"
-export const INCREMENT_ASYNC = "INCREMENT_ASYNC"
-export const DECREMENT = "DECREMENT"
-export const HELLO = "HELLO"
+export const increment = () => ({ type: types.INCREMENT });
 
-export const increment = () => {
-  return { type: INCREMENT }
-}
+export const increment_async = () => ({ type: types.INCREMENT_ASYNC });
 
-export const increment_async = () => {
-  return { type: INCREMENT_ASYNC }
-}
+export const decrement = () => ({ type: types.DECREMENT });
 
-export const decrement = () => {
-  return { type: DECREMENT }
-}
+export const hello = () => ({ type: types.HELLO });
 
-export const hello = () => {
-  return { type: HELLO }
-}
